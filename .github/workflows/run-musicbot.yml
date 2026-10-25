@@ -61,7 +61,7 @@ jobs:
           MONGO_URL: ${{ secrets.MONGO_URL }}
           LOGGER_ID: ${{ secrets.LOGGER_ID }}
           OWNER_ID: ${{ secrets.OWNER_ID }}
-          SESSION: ${{ secrets.SESSION }}
+          SESSION_ID: ${{ secrets.SESSION_ID }}
         run: |
           set -euo pipefail
           for name in API_ID API_HASH BOT_TOKEN MONGO_URL LOGGER_ID OWNER_ID SESSION; do
